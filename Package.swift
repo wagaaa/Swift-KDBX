@@ -10,6 +10,12 @@ let package = Package(
             name: "KDBX",
             targets: ["KDBX"]),
     ],
+    platforms: [
+        .macOS(.v13),
+        .iOS(.v16),
+        .watchOS(.v9),
+        .tvOS(.v16)
+    ],
     dependencies: [
         .package(url: "https://github.com/tmthecoder/Argon2Swift", branch: "main"),
         .package(url: "https://github.com/1024jp/GzipSwift", from: Version(6, 0, 0)),
